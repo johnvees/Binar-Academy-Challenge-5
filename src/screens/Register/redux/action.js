@@ -17,7 +17,7 @@ export const postRegisterAction = data => async dispatch => {
   }
 };
 
-setRegister = payload => {
+const setRegister = payload => {
   return {
     type: 'SET_POST_REGISTER',
     userDataRegister: payload,

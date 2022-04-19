@@ -3,14 +3,7 @@ import React, {useEffect, useState} from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {ms} from 'react-native-size-matters';
 
-import {
-  Gap,
-  Header,
-  Popular,
-  Recommended,
-  Search,
-  Skeleton,
-} from '../../components';
+import {Gap, Header, Popular, Recommended, Skeleton} from '../../components';
 import {colors} from '../../utils';
 import {ScrollView} from 'react-native-gesture-handler';
 import {useDispatch, useSelector} from 'react-redux';
@@ -26,6 +19,7 @@ const Home = () => {
 
   useEffect(() => {
     getBookData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tokenValue]);
 
   const getBookData = () => {

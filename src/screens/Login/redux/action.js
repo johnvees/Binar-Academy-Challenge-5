@@ -26,7 +26,7 @@ export const postLoginAction = data => async dispatch => {
   }
 };
 
-setLogin = payload => {
+const setLogin = payload => {
   return {
     type: 'SET_POST_LOGIN',
     userDataLogin: payload,

@@ -7,7 +7,7 @@ import {useDispatch} from 'react-redux';
 import {colors, fonts} from '../../utils';
 import {ILLogo} from '../../assets';
 import {Button, Gap} from '../../components';
-import { postRegisterAction } from './redux/action';
+import {postRegisterAction} from './redux/action';
 
 let regexPass = new RegExp('^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$');
 let regexEmail = new RegExp('^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$');
@@ -88,7 +88,7 @@ const Register = ({navigation}) => {
         <Button
           onPress={() => navigation.navigate('Login')}
           type={'textOnly'}
-          secondaryTitle={`Already Have an Account?`}
+          secondaryTitle={'Already Have an Account?'}
           primaryTitle={' Login Here'}
         />
       </View>

@@ -15,7 +15,7 @@ class Notification {
         // process the notification
 
         // (required) Called when a remote is received or opened, or local notification is opened
-        notification.finish(PushNotificationIOS.FetchResult.NoData);
+        notification.finish(PushNotification.FetchResult.NoData);
       },
 
       // (optional) Called when Registered Action is pressed and invokeApp is false, if true onNotification will be called (Android)
@@ -50,6 +50,7 @@ class Notification {
        *     requestPermissions: Platform.OS === 'ios'
        */
       requestPermissions: true,
+      // eslint-disable-next-line no-undef, no-dupe-keys
       requestPermissions: Platform.OS === 'ios',
     });
   };

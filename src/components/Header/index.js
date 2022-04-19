@@ -19,6 +19,7 @@ const Header = ({type, title, onPress}) => {
 
     try {
       const ShareResponse = await Share.open(shareOptions);
+      console.log(ShareResponse);
     } catch (error) {
       console.log(error);
     }

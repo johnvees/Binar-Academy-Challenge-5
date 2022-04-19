@@ -1,10 +1,4 @@
-import {
-  StyleSheet,
-  Text,
-  View,
-  TextInput,
-  TouchableOpacity,
-} from 'react-native';
+import {StyleSheet, View, TextInput, TouchableOpacity} from 'react-native';
 import React, {useState} from 'react';
 import {ms} from 'react-native-size-matters';
 import Feather from 'react-native-vector-icons/Feather';
@@ -12,7 +6,7 @@ import Feather from 'react-native-vector-icons/Feather';
 import {colors, fonts} from '../../utils';
 
 const Search = () => {
-  const [pencarian, setPencarian] = useState('');
+  const [setPencarian] = useState('');
 
   return (
     <View style={styles.container}>

@@ -5,16 +5,16 @@ import {ms} from 'react-native-size-matters';
 import {Notification} from '../../components';
 
 import {colors} from '../../utils';
-import {Gap, Header, Popular, Skeleton} from '../../components';
+import {Gap, Header, Popular} from '../../components';
 import {DetailHeader, DetailOverview} from '../../components/DetailComp';
 import {ScrollView} from 'react-native-gesture-handler';
 import {setRefreshing} from '../../utils/store/globalAction';
 import {useDispatch, useSelector} from 'react-redux';
 import {getRecommendedBookData} from '../Home/redux/action';
 
-const Detail = ({skel}) => {
+const Detail = () => {
   const dispatch = useDispatch();
-  const {loading, refreshing} = useSelector(state => state.Global);
+  const {refreshing} = useSelector(state => state.Global);
 
   const getBookData = () => {
     dispatch(getRecommendedBookData());
@@ -35,8 +35,8 @@ const Detail = ({skel}) => {
 
   const testPushNotification = () => {
     Notification.configure();
-    Notification.buatChannel("1");
-    Notification.kirimNotification("1", "Judul", "Isi");
+    Notification.buatChannel('1');
+    Notification.kirimNotification('1', 'Judul', 'Isi');
   };
   return (
     <SafeAreaView style={styles.container}>

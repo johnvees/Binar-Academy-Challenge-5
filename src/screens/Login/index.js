@@ -36,6 +36,7 @@ const Login = ({navigation}) => {
     if (tokenValue) {
       navigation.navigate('Home');
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tokenValue]);
 
   return (
@@ -72,7 +73,7 @@ const Login = ({navigation}) => {
         <Button
           onPress={() => navigation.navigate('Register')}
           type={'textOnly'}
-          secondaryTitle={`Don't Have an Account Yet?`}
+          secondaryTitle={"Don't Have an Account Yet?"}
           primaryTitle={' Register Here'}
         />
       </View>

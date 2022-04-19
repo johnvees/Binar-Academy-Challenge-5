@@ -7,6 +7,7 @@ import {colors, fonts} from '../../utils';
 import Gap from '../Gap';
 
 const detailOverview = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const {bookDetail = []} = useSelector(state => state.home);
 
   return (

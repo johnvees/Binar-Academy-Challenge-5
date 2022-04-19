@@ -27,6 +27,7 @@ const Popular = () => {
 
   useEffect(() => {
     getRecommendedBook();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const recommendedBookCard = ({item}) => {

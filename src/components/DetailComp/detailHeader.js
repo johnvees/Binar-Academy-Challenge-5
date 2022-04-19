@@ -8,7 +8,7 @@ import {Button, Gap} from '../../components';
 import {colors, fonts, idrCurrency} from '../../utils';
 
 const detailHeader = () => {
-
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const {bookDetail = []} = useSelector(state => state.home);
 
   return (
