@@ -2,16 +2,14 @@ import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import Feather from 'react-native-vector-icons/Feather';
 import {ms} from 'react-native-size-matters';
-import {useNavigation} from '@react-navigation/native';
 import Share from 'react-native-share';
 
 import {colors, fonts} from '../../utils';
 import {Gap} from '../../components';
 import Button from '../Button';
+import {navigate} from '../../utils/helpers/navigate';
 
 const Header = ({type, title, onPress}) => {
-  const navigation = useNavigation();
-
   const customShare = async () => {
     const shareOptions = {
       message: 'This is a test share massage',
@@ -40,7 +38,7 @@ const Header = ({type, title, onPress}) => {
   } else if (type === 'detail') {
     return (
       <View style={styles.detailContent}>
-        <TouchableOpacity onPress={() => navigation.goBack()}>
+        <TouchableOpacity onPress={() => navigate('Home')}>
           <Feather
             name="chevron-left"
             size={ms(24)}
