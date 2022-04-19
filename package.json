@@ -1,6 +1,6 @@
 {
   "name": "listBook",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -11,6 +11,10 @@
     "prepare": "husky install",
     "postversion": "react-native-version",
     "published": "np"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnvees/test-husky2.git"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.17.3",
