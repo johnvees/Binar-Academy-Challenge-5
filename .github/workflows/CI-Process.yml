@@ -20,9 +20,6 @@ jobs:
       - name: instalasi modules
         run: yarn
 
-      - name: unit testing
-        run: yarn test
-
   check-linter:
     runs-on: ubuntu-latest
 
