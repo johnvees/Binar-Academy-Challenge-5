@@ -16,6 +16,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/johnvees/test-husky2.git"
+    
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.17.3",
