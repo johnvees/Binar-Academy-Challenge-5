@@ -22,8 +22,13 @@ jobs:
       - name: generate apk
         run: |
           cd android
-          ./gradlew bundleRelease
-          cd ..
+          ./gradlew assembleRelease
+
+      - name: upload artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: release
+          path: android/app/build/outputs/apk/release/app-release.apk
 
       - name: send file as messages
         run: |
