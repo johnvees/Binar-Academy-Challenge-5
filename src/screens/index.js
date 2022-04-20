@@ -4,5 +4,6 @@ import Login from './Login';
 import Logout from './Logout';
 import Register from './Register';
 import Successful from './Successful';
+import PDF from './PDF';
 
-export {Detail, Home, Login, Logout, Register, Successful};
+export {Detail, Home, Login, Logout, Register, Successful, PDF};

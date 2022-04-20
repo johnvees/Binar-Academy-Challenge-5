@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "prepare": "husky install",
     "postversion": "react-native-version",
-    "published": "np"
+    "published": "np",
+    "build:release": "cd android && gradlew clean && gradlew cleanBuildCache && gradlew bundleRelease assembleRelease && cd .."
   },
   "repository": {
     "type": "git",
@@ -28,9 +29,12 @@
     "np": "^7.6.1",
     "react": "17.0.2",
     "react-native": "0.68.0",
+    "react-native-blob-util": "^0.15.0",
     "react-native-gesture-handler": "^2.3.2",
     "react-native-internet-connection-alert": "^0.1.7",
     "react-native-linear-gradient": "^2.5.6",
+    "react-native-openanything": "^0.0.6",
+    "react-native-pdf": "^6.5.0",
     "react-native-push-notification": "^8.1.1",
     "react-native-ratings": "^8.1.0",
     "react-native-responsive-screen": "^1.4.2",
