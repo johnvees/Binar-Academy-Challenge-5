@@ -24,7 +24,7 @@ jobs:
           cd android
           ./gradlew assembleRelease
 
-      - name: upload artifact
+      - name: artifacts
         uses: actions/upload-artifact@v1
         with:
           name: release

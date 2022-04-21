@@ -6,7 +6,11 @@ import {Notification} from '../../components';
 
 import {colors} from '../../utils';
 import {Gap, Header, Popular} from '../../components';
-import {DetailHeader, DetailOverview} from '../../components/DetailComp';
+import {
+  DetailHeader,
+  DetailOverview,
+  DetailSoundPlayer,
+} from '../../components/DetailComp';
 import {ScrollView} from 'react-native-gesture-handler';
 import {setRefreshing} from '../../utils/store/globalAction';
 import {useDispatch, useSelector} from 'react-redux';
@@ -52,6 +56,8 @@ const Detail = () => {
         />
         <Gap height={ms(24)} />
         <DetailHeader />
+        <Gap height={ms(24)} />
+        <DetailSoundPlayer />
         <Gap height={ms(24)} />
         <DetailOverview />
         <Gap height={ms(24)} />
