@@ -7,6 +7,7 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import {Button, Gap} from '../../components';
 import {colors, fonts, idrCurrency} from '../../utils';
 import {navigate} from '../../utils/helpers/navigate';
+import currency from 'currency.js';
 
 const detailHeader = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -54,7 +55,7 @@ const detailHeader = () => {
 
         <Button
           type={'fullButton'}
-          title={idrCurrency.format(`${bookDetail.price}`)}
+          title={currency(`${bookDetail.price}`, {symbol: 'Rp '}).format()}
           onPress={() => navigate('PDF')}
         />
       </View>

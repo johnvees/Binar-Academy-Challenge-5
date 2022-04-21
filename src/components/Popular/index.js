@@ -11,6 +11,7 @@ import {
   getDetailBookById,
   getRecommendedBookData,
 } from '../../screens/Home/redux/action';
+import currency from 'currency.js';
 
 const Popular = () => {
   const dispatch = useDispatch();
@@ -52,7 +53,7 @@ const Popular = () => {
             <Gap height={ms(2)} />
             <View>
               <Text style={styles.bookPrice}>
-                {idrCurrency.format(`${item.price}`)}
+                {currency(`${item.price}`, {symbol: 'Rp '}).format()}
               </Text>
               <Gap height={ms(2)} />
               <Text style={styles.bookRating}>
