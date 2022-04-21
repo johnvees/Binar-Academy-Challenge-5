@@ -6,7 +6,7 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import {FlatList, TouchableOpacity} from 'react-native-gesture-handler';
 
 import Gap from '../Gap';
-import {colors, fonts, idrCurrency} from '../../utils';
+import {colors, fonts} from '../../utils';
 import {
   getDetailBookById,
   getRecommendedBookData,

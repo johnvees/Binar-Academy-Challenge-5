@@ -5,7 +5,7 @@ import {ms} from 'react-native-size-matters';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 import {Button, Gap} from '../../components';
-import {colors, fonts, idrCurrency} from '../../utils';
+import {colors, fonts} from '../../utils';
 import {navigate} from '../../utils/helpers/navigate';
 import currency from 'currency.js';
 
